@@ -3,6 +3,6 @@ streamlit app
 
 You can use my webapp at this link.
 
-https://oransom48-miniaidoctor-deploy-app-d5xvjv.streamlit.app/
+https://miniaidoctor-oransom48.streamlit.app/
 
 have fun :)
