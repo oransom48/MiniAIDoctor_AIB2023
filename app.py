@@ -16,7 +16,10 @@ symptom = st.text_input('What Happened?',"I have no energy and have lost my appe
 ask_embed = embed([symptom])
 
 @st.cache
-model = joblib.load('LinearSVC1_model.joblib')
+def load_model():
+  return joblib.load('LinearSVC1_model.joblib')
+model = load_model()
+
 disease = model.predict(ask_embed)
 answer = disease[0]
 
