@@ -9,7 +9,7 @@ st.write("""
 
 This app predicts your disease.
 """)
-
+@st.cache
 embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
 
 symptom = st.text_input('What Happened?',"I have no energy and have lost my appetite. I'm feeling really sick and don't know what's wrong.")
