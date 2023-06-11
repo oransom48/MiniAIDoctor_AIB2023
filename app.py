@@ -15,7 +15,7 @@ def encoder_txt():
   return hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
 
 embed = encoder_txt()
-symptom = st.text_input('What Happened?',"I have no energy and have lost my appetite. I'm feeling really sick and don't know what's wrong.")
+symptom = st.text_input('What Happened?',"", placeholder="I have no energy and have lost my appetite. I'm feeling really sick and don't know what's wrong.")
 ask_embed = embed([symptom])
 
 @st.cache_resource
